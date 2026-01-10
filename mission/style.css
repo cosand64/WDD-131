@@ -1,0 +1,30 @@
+#content {
+    max-width: 50%;
+    border: 1px solid grey;
+    margin: 0 20%;
+    padding: 3% 11%;
+}
+h1, h4 {
+    text-align: center;
+    letter-spacing: .1em;
+}
+h4 {
+    margin-bottom: 0;
+}
+hr {
+    margin-top: 0;
+}
+ol {
+    line-height: 1.5em;
+}
+li {
+    margin-top: 10px;
+    margin-top: 10px;
+}
+img {
+    width: 25%;
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}

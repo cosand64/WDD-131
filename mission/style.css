@@ -4,12 +4,14 @@
     margin: 0 20%;
     padding: 3% 11%;
 }
-h1, h4 {
+h1, h2 {
     text-align: center;
     letter-spacing: .1em;
 }
-h4 {
+h2 {
     margin-bottom: 0;
+    font-size: 0.9em;
+    color: skyblue;
 }
 hr {
     margin-top: 0;

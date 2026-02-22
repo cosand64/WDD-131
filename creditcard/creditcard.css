@@ -48,7 +48,7 @@ body {
 /* --- BACK CARD --- */
 .cardBack {
     z-index: 1;
-    top: 15%;  /* Percentage based offsets */
+    top: 15%;
     left: 20%;
 }
 
@@ -92,8 +92,13 @@ input {
     border: 1px solid #a88728;
 }
 
-.cardNumber { grid-area: number; }
-.cardHolder { grid-area: holder; }
+.cardNumber { 
+    grid-area: number; 
+}
+
+.cardHolder { 
+    grid-area: holder; 
+}
 
 #cardExpiration {
     grid-area: expiration;

@@ -75,6 +75,38 @@ const hikes = [
 let hikeContainer = document.querySelector('#hike-container');
 let button = document.querySelector('button');
 
+button.addEventListener('click', search);
+
+function search(){
+  let hikeQuery = document.querySelector('#search').value;
+
+  let filterHikes = hikes.filter(function(hike){
+      return (
+        hike.name.toLowerCase().includes(hikeQuery.toLowerCase()) ||
+        hike.description.toLowerCase().includes(hikeQuery.toLowerCase()) ||
+        hike.tags.find(tag => tag.toLowerCase().includes(hikeQuery.toLowerCase()))
+      );
+  })
+  console.log(filterHikes);
+
+  let sortedHikes = filterHikes.sort(compareHikes)
+
+  function compareHikes(a,b) {
+    if (a.difficulty < b.difficulty) {
+        return -1;
+    } else if (a.difficulty > b.difficulty) {
+        return 1;
+    }
+    return 0;
+    }
+
+  hikeContainer.innerHTML = "";
+  sortedHikes.forEach(function(hike){
+    renderHike(hike)
+  })
+
+}
+
 let randomNum = Math.floor(Math.random()* hikes.length);
 console.log(randomNum)
 

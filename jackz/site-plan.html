@@ -4,15 +4,15 @@
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8" />
-		<title>Site Plan</title>
+		<title>Jackz</title>
 		<link type="text/css" rel="stylesheet" href="site-plan.css" />
 	</head>
 
 	<body>
 		<header>
-			<h1>[Site name] Site Plan</h1>
-			<h2>FirstName LastName</h2>
-			<h2>WDD 131-[section]</h2>
+			<h1>Jackz Site Plan</h1>
+			<h2>Connor Sanderson</h2>
+			<h2>WDD 131-A1</h2>
 			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
 		</header>
 		<main>
@@ -20,22 +20,41 @@
 			<hr />
 			<h2>Overview</h2>
 			<h3>Purpose</h3>
-			<p>[Your purpose here]</p>
+			<p>
+				The purpose of the site is simple. I want to create a place where all of the information
+				regarding Jackz can be placed and stored. This includes updates about open timeslots for 
+				barnhunt trials and information on upcoming trials.
+			</p>
 			<!-- change this -->
 
 			<h3>Audience</h3>
-			<p>[Your audience here]</p>
+			<p>
+				The intended audience will all of the people who are part of NWA barnhunt or those looking
+				to participate in NWA barnhunt activities. This also applies to anyone just looking to
+				experience and learn more about barn hunt.
+			</p>
 			<!-- change this -->
 
 			<h3>Dynamic elements</h3>
-			<p>[Describe dynamic elements provided by Javascript here]</p>
+			<p>
+				The first thing that I will do is use an array of objects to store available lessons for sign up.
+				Each of these lesson objects will contain an id, title, level, price, and isAvailable property.
+				I will also create a user profile object that will store data of the user. I will use the .filter
+				mehtod to allow people to search through the available lessons with more ease. This will allow
+				people to search for classes based on level of experience (novice, open, master). I will even use
+				the .map method to display these lessons on screen. The .forEach method will then be used to attach 
+				event listeners to several sign up buttons at the same time. I then plan on creating three functions.
+				these will be displayLessons(data), filterLessons(level) and handleRegistration(event). Each lesson 
+				will have the isAvailable property as I stated earlier on. Should the isAvailable be false the sign up
+				button will be changed to class full and will not allow the user to sign up.
+			</p>
 			<!-- change this -->
 
 			<hr />
 			<h2>Branding</h2>
 			<h3>Website Logo</h3>
 			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
-			<img src="#" alt="Logo image" />
+			<img src="images/jackz-logo.jpg" alt="Jackz Logo" />
 			<hr />
 			<h2>Style Guide</h2>
 
@@ -47,9 +66,9 @@
 			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
 			Palette URL:
 			<a
-				href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c"
+				href="https://coolors.co/003ea5-171111-a2a77f-e3e7af"
 				target="_blank"
-				>https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c</a
+				>https://coolors.co/003ea5-171111-a2a77f-e3e7af</a
 			>
 
 			<table class="colors">
@@ -62,10 +81,10 @@
 					</tr>
 					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
 					<tr>
-						<td class="primary">[#396E94]</td>
-						<td class="secondary">[#E7C24F]</td>
-						<td class="accent1">[#A43312]</td>
-						<td class="accent2"></td>
+						<td class="primary">[#A2A77F]</td>
+						<td class="secondary">[#171111]</td>
+						<td class="accent1">[#003EA5]</td>
+						<td class="accent2">[#E3E7AF]</td>
 					</tr>
 				</tbody>
 			</table>
@@ -76,11 +95,11 @@
 			<!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
 
 			<h4>
-				Heading Font: [Font Name here]
+				Heading Font: Lora
 				<!-- change this -->
 			</h4>
 			<h4>
-				Paragraph Font: [Font Name here]
+				Paragraph Font: Source Sans 3
 				<!-- change this -->
 			</h4>
 			<h3>Normal paragraph example</h3>
@@ -114,9 +133,63 @@
 
 			<h2>Content</h2>
 			<h3>Home page</h3>
-			<p>[content, images, data for the home page]</p>
+			<p>
+				Jackz is a start up company focused on bringing the best experience for you and your
+				beloved dog. How do we do this you ask? The answer is simple. Through our loving products
+				and confidence building, enriching barnhunt Trials along side NWA Barnhunt. 
+
+				The treat bags designed and produced by Jackz is the perfect companion to any aspiring or
+				established dog trainer. With its removable pouches you can easily swap treats for any given
+				occasion or training session. The removable treat pouches not only allow for easy washing, but
+				also allows for easy storage!
+
+				NWA Barnhunt
+				NWA Barnhunt is a recently opened barn hunt club based in Northwest Arkansas that is providing 
+				more chances to everyone around to experience the enriching activities of barnhunt. Together with
+				Jackz anybody can sign up for barnhunt lessons to prepare for any upcoming trials or just for the
+				enrichment of their dog!
+
+				What is Barnhunt?
+				Barnhunt is a dog sport in which your dog can compete by finding several rats inside
+				of tubes hidden within a straw obsticle course. Barnhunt has several levels in which
+				your dog can compete, including: Novice, Open, Senior, Master and Crazy 8s. 
+				Click here to learn more and sign up for a lesson!
+
+				<img src="images/jackzbag.jpg" alt="Jackz Special Treat Pouch">
+
+				<img src="images/nova.jpg" alt="Nova the dog!">
+
+				<img src="images/happy-dog.jpeg" alt="Nova the dog, laying in the straw">
+			</p>
 			<h3>[Page 2]</h3>
-			<p>[content, images, data for the subpage]</p>
+			<p>
+				More information about barnhunt and its trials!
+				Novice: At the Novice level your dog will find one rat, complete a climb, and travel
+				through one straight tunnel within two minutes.
+				Open: At the Open level your dog will find two rats, complete a climb, and travel
+				through a tunnel with one turn within two minutes and 30 seconds.
+				Senior: At the Senior level your dog will find 4 rats, complete a climb, and travel
+				through a tunnel with one or two turns within three minutes and 30 seconds.
+				Master: At the Master level your dog will find 1 - 5 rats, complete a climb, and travel
+				through a complex tunnel within four minutes and 30 seconds. The number of rats that
+				your dog will need to find will be chosen without the knowledge of the handler.
+				Crazy 8s: Crazy eights is a special type of even seperate from the rest where the 
+				dogs are challenged to find as many of the 8 rats as they can within 2 minutes. The
+				more rats they find, the more points they'll earn! Due to not having enough rats and
+				tubes it will not be possible to fully practice crazy eights.
+
+
+				Sign up for a lessson
+
+				dates and times signups [insert signup form for Novice, Open, Senior, and Master]
+
+				Should you wish to sign up to practice Crazy 8s please let us know directly through
+				this link!
+
+				<img src="images/nwa-barnhunt.jpeg" alt="NWA Barnhunt Get that Rat">
+				<img src="images/rick-and-rats.jpeg" alt="The happy rats to be found!">
+				<img src="images/course-setup.jpeg" alt="An example of a course in the process of being built">
+			</p>
 			<h2>Wireframes</h2>
 			<p>
 				Create two wireframes for your site. One for each page and list them
@@ -125,17 +198,17 @@
 
 			<h3>Home</h3>
 			<p>
-				[Any additional details about home that the wireframe does not make
-				clear]
+				I was not able to add any color in the wireframe but I do have colors decided that
+				will be used in their respective places.
 			</p>
-			<img src="#" alt="home page wireframe" />
+			<img src="images/homepage-wire.png" alt="home page wireframe" />
 
 			<h3>[Page 2]</h3>
 			<p>
-				[Any additional details about page 2 that the wireframe does not make
-				clear]
+				Same issue as above with the colors and images. But this page will also have a form
+				where people will be able to sign up for their class.
 			</p>
-			<img src="#" alt="page 2 wireframe" />
+			<img src="images/signup-wireframe.png" alt="page 2 wireframe" />
 		</main>
 	</body>
 </html>

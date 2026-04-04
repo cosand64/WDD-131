@@ -52,11 +52,31 @@ header {
     text-align: center;
 }
 
-.logo {
-    max-width: 150px;
-    margin: 0 auto 1rem auto;
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
+.site-title {
+    color: white; /* Makes JACKz visible against the dark header */
+    margin: 0;
+    font-size: 2rem;
+}
+
+.logo {
+    max-width: 100px; /* Made slightly smaller to fit well with the text */
+    margin: 0;
+}
+
+/* Base Mobile Layout for Content Wrappers */
+.content-wrapper {
+    display: flex;
+    flex-direction: column; /* Keeps image and text stacked on mobile */
+    gap: 1.5rem;
+}
 nav {
     display: flex;
     flex-direction: column;
@@ -192,8 +212,8 @@ footer {
         padding: 1rem 3rem;
     }
 
-    .logo {
-        margin: 0;
+    .logo-wrapper {
+        margin-bottom: 0;
     }
 
     nav {
@@ -212,15 +232,26 @@ footer {
         padding: 3rem;
     }
 
-    /* Index: Align text and image side-by-side */
-    .hero-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
+    /* Side-by-Side Layouts */
+    .content-wrapper {
+        display: flex;
+        flex-direction: row; /* This lets the natural HTML order dictate Left/Right */
         align-items: center;
+        gap: 3rem;
     }
 
-    /* Signup Page Layouts */
+    /* Controls the size of the images */
+    .content-wrapper img {
+        flex: 0 0 40%; /* The image takes up exactly 40% of the row */
+        max-width: 40%;
+        margin: 0;
+    }
+
+    .text-content {
+        flex: 1; /* The text automatically fills the remaining 60% */
+    }
+
+    /* Signup Page Layouts (Keep these from your previous file) */
     .gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -234,11 +265,17 @@ footer {
     }
 
     .levels-info h2, .levels-info .gallery {
-        grid-column: 1 / -1; /* Span across both columns */
+        grid-column: 1 / -1; 
     }
 
     .registration-section {
         max-width: 600px;
         margin: 0 auto;
+    }
+    
+    #lesson-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 }

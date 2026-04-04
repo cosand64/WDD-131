@@ -1,10 +1,10 @@
 // Array of objects to store available lessons
 const lessons = [
     { id: 1, title: "Novice Fundamentals", level: "novice", price: 25.00, isAvailable: true },
-    { id: 2, title: "Novice Tunnel Practice", level: "novice", price: 20.00, isAvailable: false }, // Full class example
-    { id: 3, title: "Open Level Turns", level: "open", price: 30.00, isAvailable: true },
-    { id: 4, title: "Senior Search Tactics", level: "senior", price: 35.00, isAvailable: true },
-    { id: 5, title: "Master Blind Search", level: "master", price: 40.00, isAvailable: true }
+    { id: 2, title: "Novice Practice", level: "novice", price: 20.00, isAvailable: false }, // Full class example
+    { id: 3, title: "Open Practice", level: "open", price: 30.00, isAvailable: true },
+    { id: 4, title: "Senior Practice", level: "senior", price: 35.00, isAvailable: true },
+    { id: 5, title: "Master Practice", level: "master", price: 40.00, isAvailable: true }
 ];
 
 // User profile object to store user data

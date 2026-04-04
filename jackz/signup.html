@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jackz | Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/jackz-logo.jpg" alt="Jackz Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="levels-info">
+            <h2>Barnhunt Trial Levels</h2>
+            
+            <div class="level-card">
+                <h3>Novice</h3>
+                <p>
+                    At the Novice level your dog will find one rat, complete a climb, and travel 
+                    through one straight tunnel within two minutes.
+                </p>
+            </div>
+            
+            <div class="level-card">
+                <h3>Open</h3>
+                <p>
+                    At the Open level your dog will find two rats, complete a climb, and travel through
+                    a tunnel with one turn within two minutes and 30 seconds.
+                </p>
+            </div>
+            
+            <div class="level-card">
+                <h3>Senior</h3>
+                <p>
+                    At the Senior level your dog will find 4 rats, complete a climb, and travel through 
+                    a tunnel with one or two turns within three minutes and 30 seconds.
+                </p>
+            </div>
+            
+            <div class="level-card">
+                <h3>Master</h3>
+                <p>
+                    At the Master level your dog will find 1 - 5 rats, complete a climb, and travel through
+                    a complex tunnel within four minutes and 30 seconds. The number of rats that your dog 
+                    will need to find will be chosen without the knowledge of the handler.
+                </p>
+            </div>
+            
+            <div class="level-card">
+                <h3>Crazy 8s</h3>
+                <p>
+                    Crazy eights is a special type of event seperate from the rest where the dogs are 
+                    challenged to find as many of the 8 rats as they can within 2 minutes. The more 
+                    rats they find, the more points they'll earn! Due to not having enough rats and 
+                    tubes it will not be possible to fully practice crazy eights. Should you wish 
+                    to sign up to practice Crazy 8s please let us know directly.
+                </p>
+            </div>
+
+            <div class="gallery">
+                <img src="images/nwa-barnhunt.jpeg" alt="NWA Barnhunt Get that Rat">
+                <img src="images/rick-and-rats.jpeg" alt="The happy rats to be found!">
+                <img src="images/course-setup.jpeg" alt="An example of a course in the process of being built">
+            </div>
+        </section>
+
+        <section class="registration-section">
+            <h2>Sign Up For A Lesson</h2>
+            
+            <div id="lesson-container"></div>
+            
+            <form action="#" method="get" class="signup-form">
+                <label for="owner-name">Owner Name:</label>
+                <input type="text" id="owner-name" name="owner-name" required>
+
+                <label for="dog-name">Dog Name:</label>
+                <input type="text" id="dog-name" name="dog-name" required>
+
+                <label for="level-select">Class Level:</label>
+                <select id="level-select" name="level">
+                    <option value="novice">Novice</option>
+                    <option value="open">Open</option>
+                    <option value="senior">Senior</option>
+                    <option value="master">Master</option>
+                </select>
+
+                <button type="submit">Register for Class</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jackz & NWA Barnhunt</p>
+    </footer>
+</body>
+</html>

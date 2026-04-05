@@ -123,6 +123,18 @@ section {
     margin-top: 2rem;
 }
 
+/* Ensure content-wrapper sections have some breathing room on mobile */
+.levels-info .content-wrapper {
+    margin-bottom: 2rem;
+}
+
+/* Adjust the image to be dynamic and centered on mobile */
+.content-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 /* Form Styles */
 .signup-form {
     display: flex;
@@ -252,16 +264,16 @@ footer {
     }
 
     /* Signup Page Layouts (Keep these from your previous file) */
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+    /* Sign Up Page Adjustments */
+    .levels-info .content-wrapper {
+        align-items: flex-start; /* Aligns images to the top of the text groups */
+        margin-bottom: 4rem;
     }
 
-    .levels-info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
+    .gallery {
+        display: block;
+        max-width: 800px;
+        margin: 0 auto;
     }
 
     .levels-info h2, .levels-info .gallery {

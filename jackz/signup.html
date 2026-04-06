@@ -79,27 +79,28 @@
         </section>
 
         <section class="registration-section">
-            <h2>Sign Up For A Lesson</h2>
-            <div id="lesson-container"></div>
-            
-            <form action="#" method="get" class="signup-form">
-                <label for="owner-name">Owner Name:</label>
-                <input type="text" id="owner-name" name="owner-name" required>
+    <h2>Sign Up For A Lesson</h2>
+    
+    <div class="user-info-card signup-form">
+        <h3>User Information</h3>
+        
+        <label for="owner-name">Owner Name:</label>
+        <input type="text" id="owner-name" placeholder="e.g. Jack's dad" required>
 
-                <label for="dog-name">Dog Name:</label>
-                <input type="text" id="dog-name" name="dog-name" required>
+        <label for="dog-name">Dog Name:</label>
+        <input type="text" id="dog-name" placeholder="e.g. Jack" required>
 
-                <label for="level-select">Class Level:</label>
-                <select id="level-select" name="level">
-                    <option value="novice">Novice</option>
-                    <option value="open">Open</option>
-                    <option value="senior">Senior</option>
-                    <option value="master">Master</option>
-                </select>
+        <label for="level-select">Filter Lessons by Level:</label>
+        <select id="level-select">
+            <option value="novice">Novice</option>
+            <option value="open">Open</option>
+            <option value="senior">Senior</option>
+            <option value="master">Master</option>
+        </select>
+        </div>
 
-                <button type="submit">Register for Class</button>
-            </form>
-        </section>
+    <div id="lesson-container"></div>
+</section>
     </main>
 
     <footer>
